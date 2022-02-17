@@ -7,9 +7,9 @@ dotenv.config({
 });
 
 const app = require('./app');
-
+const mongooseUri = "mongodb+srv://mamenDseid:fUrNf62b9Bquwhs5@instacluster.1l1wm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose
-  .connect(process.env.DB, {
+  .connect(mongooseUri, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
